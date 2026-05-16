@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        AI File Intelligence System
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <div class="hero">
+
+            <h1>
+                AI File Intelligence System
+            </h1>
+
+            <p>
+                Organize, search and understand files using AI.
+            </p>
+
+        </div>
+
+        <!-- UPLOAD -->
+        <div class="card">
+
+            <h2>
+                Upload & Analyze Files
+            </h2>
+
+            <p class="small-text">
+                Supports images, PDFs, videos, audio,
+                spreadsheets, code files and more.
+            </p>
+
+            <form
+                action="/upload"
+                method="post"
+                enctype="multipart/form-data"
+            >
+
+                <input
+                    type="file"
+                    name="file"
+                    required
+                >
+
+                <button type="submit">
+                    Upload File
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="card">
+
+            <h2>
+                Analytics
+            </h2>
+
+            <p>
+                View file statistics and categories.
+            </p>
+
+            <a href="/stats">
+                Open Analytics
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h2>
+                File Explorer
+            </h2>
+
+            <p class="small-text">
+                Browse uploaded files and categories.
+            </p>
+
+            <a href="/explorer">
+                Open Explorer
+            </a>
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+</html>
